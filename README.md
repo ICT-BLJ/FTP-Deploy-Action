@@ -12,7 +12,10 @@ Automate deploying websites and more with this GitHub action. **It's free!**
 ### Usage Example
 Place the following in `/.github/workflows/main.yml`
 ```yml
-on: push
+on: 
+  push:
+    branches:
+      - main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -23,11 +26,12 @@ jobs:
       uses: actions/checkout@v4
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: ICT-BLJ/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.samkirkland.com
-        username: myFtpUserName
-        password: ${{ secrets.ftp_password }}
+        server: wochenberichte.ictblj.ch
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.PASSWORD_WEEKLY }}
+        protocol: ftps
 ```
 
 ---
