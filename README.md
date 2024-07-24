@@ -103,7 +103,7 @@ jobs:
         npm run build
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: ICT-BLJ/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.samkirkland.com
         username: myFtpUserName
@@ -123,7 +123,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: ICT-BLJ/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.samkirkland.com
         username: myFtpUserName
@@ -146,7 +146,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: ICT-BLJ/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.samkirkland.com
         username: myFtpUserName
@@ -168,7 +168,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      uses: ICT-BLJ/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.samkirkland.com
         username: myFtpUserName
